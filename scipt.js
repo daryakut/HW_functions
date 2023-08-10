@@ -1,4 +1,4 @@
-// Задача Объявить функцию, которая считывает значение через prompt и выводит “ДА” если число четное и “НЕТ” в ином случае.
+//  Declare a function that reads a value via prompt and prints "YES" if the number is even and "NO" otherwise.
 let isNumberEven = () => {
   let num = +prompt("write a number", "");
   if (num % 2 == 0) {
@@ -9,7 +9,7 @@ let isNumberEven = () => {
 };
 isNumberEven();
 
-// Задача. Создать функцию, которая в качестве аргументов получает два числа и выводит в консоль наибольшее.
+//  Create a function that takes two numbers as arguments and prints the larger one to the console.
 let printBiggerNumber = () => {
   let num1 = +prompt("write first number", "");
   let num2 = +prompt("write second number", "");
@@ -18,14 +18,14 @@ let printBiggerNumber = () => {
 };
 printBiggerNumber();
 
-// Задача Описать функцию, которая получает число и возвращает true, если число четное и false в ином случае
+// Describe a function that takes a number and returns true if the number is even and false otherwise
 
 let isNumberEven2 = (number) => {
   return number % 2 == 0;
 };
 console.log(isNumberEven2(6));
 
-// Задача Описать функцию, которая получает в качестве аргумента число и возвращает массив из чисел от 0 до указанного числа.
+//  Describe a function that takes a number as an argument and returns an array of numbers from 0 to a specified number.
 let createArraySizeN = (n) => {
   let arr = [];
   for (let i = 0; i <= n; i++) {
@@ -35,7 +35,7 @@ let createArraySizeN = (n) => {
 };
 console.log(createArraySizeN(5));
 
-// Напишите функцию, которая в качестве аргументов получает два числа и возвращает массив чисел со значениями от меньшего числа к большему.
+//Write a function that takes two numbers as arguments and returns an array of numbers from the smallest number to the largest.
 let createArrayFromAtoB = (a, b) => {
   let smallest = a < b ? a : b;
   let biggest = a > b ? a : b;
@@ -47,7 +47,7 @@ let createArrayFromAtoB = (a, b) => {
 };
 console.log(createArrayFromAtoB(5, 13));
 
-// Напишите функцию, которая в качестве аргументов получает два числа и возвращает массив чисел со значениями от большего числа к меньшему.
+// Write a function that takes two numbers as arguments and returns an array of numbers with values from highest to lowest.
 
 let createArrayFromBtoA = (a, b) => {
   let smallest1 = a < b ? a : b;
@@ -60,9 +60,8 @@ let createArrayFromBtoA = (a, b) => {
 };
 console.log(createArrayFromBtoA(2, 15));
 
-// В программе объявлена переменная list, которая содержит массив чисел. Используя цикл посчитайте сумму чисел и выведите в консоль.
-
-let countSumOfPositiveNumbersInArraycountSumOfNumbersInArray = () => {
+// The program declares a list variable that contains an array of numbers. Using a loop, calculate the sum of the numbers and print to the console.
+let countSumOfNumbersInArray = () => {
   let list = [1, 3, 7, 2, 8, 4, 32, 7, 36, 457, 3];
   let sum = 0;
   for (const n of list) {
@@ -72,7 +71,7 @@ let countSumOfPositiveNumbersInArraycountSumOfNumbersInArray = () => {
 };
 console.log(countSumOfNumbersInArray());
 
-// В программе объявлена переменная list, представляющая массив положительных и отрицательных численных значений. Используя цикл, выведите в консоль сумму положительных чисел.
+//The program declares a list variable representing an array of positive and negative numerical values. Using a loop, print the sum of positive numbers to the console.
 
 let countSumOfPositiveNumbersInArray = () => {
   let list = [1, 3, -7, 2, 8, 4, -32, 7, -36, -457, 3];
@@ -86,7 +85,7 @@ let countSumOfPositiveNumbersInArray = () => {
 };
 console.log(countSumOfPositiveNumbersInArray());
 
-// В программе объявлена переменная list, которая содержит массив чисел. Используя цикл посчитайте разность суммы всех четных чисел и суммы всех нечетных.
+// The program declares a list variable that contains an array of numbers. Using a loop, calculate the difference between the sum of all even numbers and the sum of all odd numbers.
 
 let diffEvenAndOdd = () => {
   let list = [1, 3, 7, 2, 8, 4, 32, 7, 36, 457, 3];
@@ -103,7 +102,7 @@ let diffEvenAndOdd = () => {
 };
 console.log(diffEvenAndOdd());
 
-// Напишите функцию, которая в качестве аргумента получает массив из чисел и возвращает объект со свойствами min, max, avg с соответствующими значениями по массиву.
+// Write a function that takes an array of numbers as an argument and returns an object with the properties min, max, avg with the corresponding values in the array.
 
 let minMaxAvg = (arr) => {
   let min = 0;
@@ -127,8 +126,7 @@ let minMaxAvg = (arr) => {
 };
 console.log(minMaxAvg([1, 4, 8, 3, 34, 65, -33]));
 
-// Используя цикл, выведите в консоль сумму чисел из диапазона значений от 0 до 50 кратные 5.
-
+// Using a loop, print to the console the sum of numbers from the range of values from 0 to 50 multiples of 5.
 let sumOfNumsDividedBy5 = () => {
   let sum = 0;
   for (let i = 0; i <= 50; i += 5) {
@@ -138,7 +136,7 @@ let sumOfNumsDividedBy5 = () => {
 };
 console.log(sumOfNumsDividedBy5());
 
-// В программе объявлена переменная list, содержащая массив данных. Используя цикл, посчитайте сумму значений до первого булевого значения. Дойдя до булевого значения остановите цикл. Результат суммы выведите в консоль
+// The program declares a list variable containing an array of data. Using a loop, count the sum of the values up to the first boolean value. When you reach a boolean value, stop the loop. Print the result of the sum to the console
 let calculateSumBeforeBoolean = () => {
   let list = [5, 13, 2, 8, true, 10, 4, false, 6];
   let sum = 0;
@@ -152,8 +150,7 @@ let calculateSumBeforeBoolean = () => {
 };
 console.log(calculateSumBeforeBoolean());
 
-// В следующих задачах будет использоваться массив из объектов, каждый из которых описывает определенный товар.
-// Пример массива
+//The following tasks will use an array of objects, each describing a specific product.
 let arr = [
   {
     id: 1,
@@ -187,26 +184,26 @@ let arr = [
   },
 ];
 
-// Написать цикл, который выводит только названия товаров.
+// Write a loop that displays only the product names.
 
 for (const item of arr) {
   console.log(item.title);
 }
 
-// Написать цикл, который выводит для каждого товара строку по маске “<название> (<цена>)”
+// Write a loop that displays for each product a line with the mask “<name> (<price>)”
 
 for (const item of arr) {
   console.log(`${item.title} (${item.price})`);
 }
 
-// Написать цикл, который выводит для каждого товара строку по маске “<название> (<цена со скидкой>)”
+// Write a loop that displays for each product a string with the mask “<name> (<discount price>)”
 
 for (const item of arr) {
   const discountedPrice = item.price * (1 - item.discount / 100);
   console.log(`${item.title} (${discountedPrice})`);
 }
 
-// Написать функцию, которая получает в качестве аргумента массив из объектов и возвращает объект с самым дорогим товаром (без учета скидки).
+// Write a function that takes an array of objects as an argument and returns an object with the most expensive product (excluding discounts).
 
 let findMostExpensiveItem = (items) => {
   let mostExpensive = items[0];
@@ -219,9 +216,8 @@ let findMostExpensiveItem = (items) => {
 };
 console.log(findMostExpensiveItem(arr));
 
-// Написать код, выполнив задание: если значение объекта является числом (number), то его значение надо увеличить вдвое.
+// Write code by completing the task: if the value of the object is a number (number), then its value must be doubled.
 
-// Пример объекта:
 
 let menu = {
   width: 200,
@@ -236,14 +232,14 @@ for (let key in menu) {
 }
 console.log(menu);
 
-// Написать функцию, которая принимает 2 числа и возвращает 1, если первое число больше, чем второе; -1, если первое число меньше, чем второе, и 0, если числа равны.
+// Write a function that takes 2 numbers and returns 1 if the first number is greater than the second; -1 if the first number is less than the second, and 0 if the numbers are equal.
 
 function compareNumbers(a, b) {
   return a > b ? 1 : a < b ? -1 : 0;
 }
 console.log(compareNumbers(4, 4));
 
-// Написать функцию, получающую на вход два числа. Если оба числа чётные - функция возвращает их произведение. Если оба числа нечётные - функция возвращает их сумму. Если одно из чисел чётное, а второе нечётное - функция возвращает это нечётное число.
+// Write a function that takes two numbers as input. If both numbers are even, the function returns their product. If both numbers are odd, the function returns their sum. If one of the numbers is even and the other is odd, the function returns that odd number.
 function oddOrEven(a, b) {
   if (a % 2 == 0 && b % 2 == 0) {
     return a * b;
